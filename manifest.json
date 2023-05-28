@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Number Remover",
+    "version": "1.0",
+    "description": "Removes all numbers from the website",
+    "permissions": ["activeTab"],
+    "content_scripts": [
+      {
+        "matches": ["*://*/*"],
+        "js": ["content.js"]
+      }
+    ],
+    "browser_action": {
+      "default_popup": "popup.html"
+    },
+    "icons": {
+      "16": "icon.png",
+      "48": "icon.png",
+      "128": "icon.png"
+    }
+  }  
